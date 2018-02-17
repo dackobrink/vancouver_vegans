@@ -1,0 +1,573 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    -webkit-margin-before: px;
+-webkit-margin-after: 0px;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 0px;
+}
+
+/**main body **/
+
+html, body {
+  height: 100%;
+width: 100%;
+  text-align: center;
+  font: 1.15rem/1 'Open Sans Condensed', sans-serif;
+  color: #FFF;
+}
+.col-12 {
+    width: 100%;
+}
+.wrapper {
+  height: 100%;
+}
+.container {
+
+}
+.inside {
+  align-items: center;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+}
+#header h1 {
+  font: 300 3rem/1 'Playfair Display SC', serif;
+  text-shadow: -2px 4px 7px rgba(150, 209, 218, 0.65);
+  color: #000;
+  text-transform: uppercase;
+  align-self: center;
+  letter-spacing: 0.5rem;
+}
+.logo-wrapper {
+  display: flex;
+  max-width: 120px;
+}
+.logo {
+  padding: 2%;
+  max-width: 120px;
+  margin-left: 0;
+  max-height: 120px;
+}
+
+}
+img-container {
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  max-width: 100%;
+}
+
+/** banner **/
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+h6 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+.banner h1, .banner h3, .banner h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  background-color: rgba(156, 157, 160, 0.5);
+  padding: 3%;
+  font-family: 'Work Sans', sans-serif;
+  height: auto;
+}
+.banner {
+  color: white;
+  background: url('../img/banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+/**content style **/
+h2 {
+  font: 1.4rem 'Work Sans', sans-serif;
+  color: #fff;
+  padding: 2%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+h4 {
+  font: 1.3rem 'Arvo', serif;
+}
+.intro h2 {
+  font-family: 'Arvo', serif;
+  color: #000;
+}
+.btn {
+  bottom: 10%;
+  transform: translateY(100%);
+}
+p {
+  padding: 2%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.row-1 {
+  background: background-size: cover, 9.75rrem auto, cover;
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+}
+.decoration {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.row-2 {
+  padding: 0 0 0;
+  margin: 0;
+}
+
+/**link styles **/
+.link a {
+  text-transform: uppercase;
+  background-color: #FFF;
+  color: black;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 0.5% 1% 0.5% 1%;
+  margin: 2%;
+}
+.link a:hover {
+  background-color: #B0D6DB;
+  opacity: 0.;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.link-light a:hover {
+  background-color: #8797D2;
+  opacity: 0.7;
+}
+
+/** Gallery **/
+.slider-container {
+  padding-bottom: 200px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 10px solid white;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.slider .slide {
+  height: 100%;
+  width: auto;
+}
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+}
+.slider .slide figcaption {
+  position: absolute;
+  top: 70%;
+  left: 12%;
+}
+.slider .slide figcaption .title {
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'work sans', sans-serif;
+  background-color: rgba(156, 157, 160, 0.5);
+  padding: 1%;
+  max-width: 80%;
+}
+.slider .slide figcaption .author {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: rgba(156, 157, 160, 0.5);
+  max-width: 80%;
+}
+.arrows {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 100px;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+.arrows .next, .arrows .prev {
+  float: left;
+  width: 50%;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-transition: .3s color ease;
+  -o-transition: .3s color ease;
+  transition: .3s color ease;
+  color: #B0D6DB;
+}
+.arrows .next:hover, .arrows .prev:hover {
+  color: #505050;
+}
+.pagination {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.pagination li {
+  display: inline-block;
+  float: left;
+  margin: 0 5px;
+}
+.pagination li.selected a {
+  background-color: #B0D6DB;
+}
+.pagination li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #505050;
+  background-color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/**footer styles **/
+.bottom-container {
+  height: 80px;
+}
+.quote {
+  font-family: 'Josefin Slab', serif;
+}
+.footer-nav {
+  list-style-type: none;
+  padding: 1%;
+  background-color: #5a9aa2;
+  display: flex;
+  width: 100%;
+}
+.footer-nav li {
+  font-size: 1.5rem;
+  margin: 0.8%;
+   flex: 1 1 100%
+
+}
+.footer-nav li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'work sans', serif;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 0.7%;
+}
+.footer-nav li a:hover {
+  color: #8797D2;
+  border: 1px solid #8797D2;
+  background: #505050;
+
+}
+#myBtn {
+  background-color: #5a9aa2;
+  border: none;
+  color: white;
+  font-family: 'work sans', sans-serif;
+  text-decoration: none;
+}
+#myBtn:hover {
+  color: #8797D2;
+  border: 1px solid #8797D2;
+  background-color: #505050;
+  text-decoration: none;
+
+}
+.social3 {
+  background-image: url("../img/blue.jpg");
+}
+.social {
+  background-image: url("../img/gallery.jpg");
+}
+.social2 {
+  background-image: url("../img/bottom-banner3.png");
+}
+.social5 {
+  background-image: url("../img/bottom-banner5.jpg");
+}
+.social, .social2, .social3, .social4, .social5 {
+  border-top: 1px solid white;
+  list-style-type: none;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  max-height: 200px;
+}
+.social img, .social2 img, .social3 img, .social4 img, .social5 img {
+  z-index: -1;
+}
+.social li, .social2 li, .social3 li, .social4 li, .social5 li {
+  display: inline;
+}
+.social i, .social2 i, .social3 i, .social4 i, .social5 i {
+  font-size: 2rem;
+  padding: 5%;
+  color: #FFF;
+  opacity: 1;
+  z-index:
+}
+.social i:hover, .social2 i:hover, .social3 i:hover, .social4 i:hover, .social5 i:hover {
+  color: black;
+}
+p {
+  padding: 2% font-size: 0.5rem;
+}
+.copy {
+  background: #505050;
+}
+.copy p {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/** go vegan page **/
+.banner2 h1, .banner2 h3, .banner2 h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  padding: 3%;
+  font-family: 'Work Sans', sans-serif;
+}
+.banner2 {
+  color: black;
+  background: url('../img/banner2.jpg') top left/cover no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page2-wrapper {
+  background-color: black;
+  padding-top: 5%;
+}
+.page2-flex {
+  display: flex;
+}
+.aside img {
+  max-width: 30%;
+}
+
+/**media queries**/
+@media all and (max-width: 64em) {
+  body {
+    font-size: 0.8rem;
+  }
+  .social i S {
+    font-size: 0.7rem;
+  }
+  .banner {
+    height: 40%;
+  }
+}
+@media all and (min-width: 48em) {
+  .row {
+    display: flex;
+    margin: 0;
+  }
+  [class*"=col-"]:last-child {
+    margin: 0;
+  }
+  .col-1 {
+    flex: 1;
+  }
+  .col-2 {
+    flex: 2;
+  }
+  .col-3 {
+    flex: 3;
+  }
+  .col-4 {
+    flex: 4;
+  }
+  .col-5 {
+    flex: 5;
+  }
+  .col-6 {
+    flex: 6;
+  }
+  .col-7 {
+    flex: 7;
+  }
+  .col-8 {
+    flex: 8;
+  }
+  .col-9 {
+    flex: 9;
+  }
+  .col-10 {
+    flex: 10;
+  }
+  .col-11 {
+    flex: 11;
+  }
+  .col-12 {
+    flex: 12;
+  }
+}
+@media all and (max-width: 48em) {
+  .logo {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .banner h1, .banner h3, .banner h6 h3 {
+    padding: 1%;
+    letter-spacing: 0;
+  }
+  #header h1 {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+  }
+  h2 {
+    font-size: 1rem;
+    padding: 3%;
+    transform: translateY(0%);
+  }
+  .banner{
+    background-attachment: scroll;
+  }
+  .banner {
+    height: 30%;
+  }
+  .banner-text h3 {
+    font-size: 1.5rem;
+  }
+  .banner-text h6 {
+    font-size: 1rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .inside {
+    margin: 0;
+  }
+  p {
+    font-size: .9rem;
+  }
+  .circle {
+    border-radius: 50%;
+    max-width: 40%;
+    padding: 5% 0;
+  }
+  .slider {
+    height: 15rem;
+    width: 100%;
+  }
+  .slider .slide figcaption {
+    top: 30%;
+  }
+  .slider .slide figcaption .title {
+    font-size: 1rem;
+  }
+  figcaption .author {
+    font-size: 0.5rem;
+  }
+  .arrows {
+    width: 20px;
+  }
+  .social i, .social2 i, .social3 i, .social4 i, .social5 i {
+    font-size: 1.25rem;
+  }
+  .footer-nav {
+    flex-direction: column;
+  }
+  .footer-nav li {
+    font-size: 1rem;
+    padding: 0.5%;
+  }
+}

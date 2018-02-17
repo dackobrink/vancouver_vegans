@@ -1,0 +1,203 @@
+/** about page **/
+.banner3 h1, .banner3 h3, .banner3 h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  background-color: rgba(172, 95, 189, 0.5);
+  padding: 3%;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.banner3 {
+  color: black;
+  background: url('../img/veg-heart.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+.banner3 h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+}
+
+.page3-wrapper {
+  background-color: #B9C0CB;
+  padding-top: 5%;
+
+}
+
+
+.page3-wrapper h1 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+
+}
+
+.page3-wrapper h6{
+  font-family: 'Work Sans', sans-serif;
+  color: #5a9aa2;
+  font-size: 1.4em;
+  font-weight: normal;
+  font-style: normal;
+}
+.page3-wrapper p, .page3-wrapper li, .page3-wrapper ul{
+  font-family: 'Work Sans', sans-serif;
+  color: #505050;
+   line-height: 1.5;
+
+}
+
+
+
+.page3-wrapper h3 {
+  margin: 0 0 30px;
+  font-size: 1.8em;
+  font-family: 'Arvo', serif;
+  background-color: #B0D6DB;
+  color: black;
+}
+
+.page3-wrapper h5 {
+  font-family: 'Arvo', serif;
+}
+
+.mission {
+  border-top: 3px solid #B0D6DB;
+  border-bottom: 3px solid  #B0D6DB;
+  background-color: white;
+  padding-bottom: 4%;
+  margin-bottom: 5%;
+}
+
+
+.row {
+  display: flex;
+}
+
+.item {
+  flex: 1 1 30%;
+  padding-left: 1.5rem;
+
+}
+
+.item:first-child {
+  padding-left: 0;
+}
+
+.item:nth-child(2) img {
+  border:3px dashed #AC5FBD;
+
+}
+.heart {
+  font-weight: bold;
+  color:#AC5FBD;
+}
+
+/* Vertical flex: items
+
+*/
+
+.item {
+  display: flex;
+  flex-direction: column;
+    ei
+}
+
+.item-heading {
+  flex: 1;
+}
+
+/* Third flex: item heading
+*/
+
+  justify-content: center;
+  flex-direction: column;
+}
+.info-container{
+
+}
+.about-info{
+text-align: left;
+padding:7% 15% 7% 15%;
+  border: 3px solid #B0D6DB;
+}
+
+.about-info ul{
+  list-style: square inside none;
+}
+.info-container {
+background-color: white;
+}
+
+.about-inside {
+  padding: 3%;
+  border: 2px dashed #B0D6DB
+}
+
+
+body {
+  margin: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* .row {
+  margin-bottom: 1.5rem;
+} */
+
+
+.item-heading {
+  padding: 1rem;
+  font-size: 1rem;
+  background: #505050;
+  text-align: center;
+}
+
+.meta {
+  color: #666;
+  /* margin-bottom: 3rem; */
+}
+
+.meta p {
+  margin-bottom: .5rem;
+}
+@media screen and (max-width: 48em) {
+
+.banner3{
+  background-attachment: scroll;
+}
+    .row {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .item {
+        padding-left: 0;
+    }
+
+    .banner3-text h3 {
+        font-size: 1.5rem;
+      }
+
+.about-info{
+  padding:0;
+}
+}

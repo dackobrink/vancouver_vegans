@@ -1,0 +1,175 @@
+/* ul, menu, dir /** go vegan page **/
+.banner5 h1, .banner5 h3, .banner5 h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  background-color: rgba(129,211,223,0.5);
+  padding: 3%;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.banner5 {
+  color: black;
+  background: url('../img/banner5.jpg') top left/cover no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+
+
+.page2-wrapper {
+  background-color: #505050;
+  padding-top: 5%;
+}
+
+.page2-flex {
+  display: flex;
+}
+
+.aside img {
+  max-width: 30%;
+}
+
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+
+}
+
+.page2-wrapper h3 {
+  margin: 0 0 30px;
+  font-size: 1.8em;
+  font-family: 'Arvo', serif;
+  background-color: #81D3DF;
+  color: black;
+    width: 100%;
+}
+
+.blog-flex {
+  background: url('../img/meet-gastown.jpg');
+
+}
+.blog-flex2 {
+
+    padding-bottom: 5%;
+}
+
+.featured-blog, .featured-blog2 , .featured-blog3{
+  margin: 0 60px;
+  padding: 100px 0;
+  border-top: 2px solid gainsboro;
+}
+
+.featured-blog-main, .featured-blog-main2, .featured-blog-main3 {
+  background: rgba(0,0,0,0.3);
+    width: 78%;
+    margin: 0 auto;
+}
+.featured-blog-main2{
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-flex,  .blog-flex3 {
+  display: flex;
+    justify-content: center;
+}
+
+.featured-blog p, .featured-blog2 p, .featured-blog3 p {
+  font-family:'Work Sans', sans-serif;
+}
+
+.blog-text, .blog-text2 , .blog-text3 {
+  margin: 0 30px;
+  width: 80%;
+}
+
+.blog-text h1, .blog-text h4, .blog-text p  {
+  text-shadow: 2px 2px 6px #000;
+}
+
+.blog-img, .blog-img2, .blog-img3 {
+  width: 20%;
+}
+
+.blog-img img, .blog-img2 img, .blog-img3 img {
+  width: 100%;
+}
+
+a:link {
+  color:   #8797D2;
+}
+
+a:visited, a:active, a:hover {
+  color: #B0D6DB;
+}
+
+a:active {
+
+}
+
+
+@media all and (max-width: 48em){
+
+
+  .banner5 {
+    background-attachment: scroll;
+  }
+
+  .banner5-text h3, .page2-wrapper h3, .blog-text h1, .blog-text2 h1, .blog-text3 h1{
+        font-size: 1.2rem
+  }
+
+  .featured-blog-main, .featured-blog-main2, .featured-blog-main3 {
+      width: 100%;
+  }
+  .featured-blog, .featured-blog2, .featured-blog3 {
+  margin: 0;
+  padding: 5% 0;
+  }
+
+  .blog-flex, .blog-flex2, .blog-flex3 {
+    flex-direction: column;
+  }
+
+
+.blog-text h4, .blog-text2 h4, .blog-text3 h4{
+  font-size: 1rem;
+
+
+}
+
+
+
+  .blog-img,  .blog-img2,  .blog-img3 {
+    width: 100%;
+/*    margin: 0 auto;*/
+  }
+  .page2-wrapper{
+    max-width: 100%;
+  }
+  .banner5 h1, .banner5 h3, .banner5 h6{
+    padding: 0;
+    margin: 0;
+  }
+
+  .banner5{
+    width: 100%;
+    height: 20%;
+  }
+/*
+    .blog-img img,  .blog-img2 img, .blog-img3 img{
+    width: 200px;
+
+} */
+}

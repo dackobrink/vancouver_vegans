@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vancouver Vegans</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Arvo|Oswald:200|Playfair+Display:900|Work+Sans:300" rel="stylesheet">
+</head>
+<body>
+<div class= "wrapper">
+  <div class ="row" id="header">
+    <div class= "col-12 logo-wrapper">
+      <img class ="logo"src="img/logo.png" />
+    </div>
+    <div class="col-12" "page-title">
+      <h1>Vancouver Vegans</h1>
+    </div>
+
+</div>
+<div class ="row">
+  <div class ="col-12">
+    <!-- <nav role="navigation" id="nav">
+      <input class="trigger" type"checkbox" id="mainNavButton" />
+      <label for="mainNavButton" onclick>Menu</label> -->
+
+            <nav>
+        <ul id="menu">
+          <ul id ="nav">
+            <li><a href ="index.html">Home</a></li>
+            <li><a href ="vegan.html">Why Vegan?</a></li>
+            <li><a href ="#">Recipes</a></li>
+            <li><a href ="restaurants.html">Restaurants </a></li>
+            <li><a href ="#">Retail</a></li>
+            <li><a href ="contact.html">Contact</a></li>
+            <li><a href ="about.html">About</a></li>
+          </ul>
+        </ul>
+
+        <div id="toggle">
+          <div class="span" id="one"></div>
+          <div class="span" id="two"></div>
+          <div class="span" id="three"></div>
+        </div>
+
+      </nav>
+      <div id="resize">
+        <ul id ="menu">
+
+          <li><a href ="#">Home</a></li>
+          <li><a href ="vegan.html">Why Vegan?</a></li>
+          <li><a href ="#">Recipes</a></li>
+          <li><a href ="restaurants.html">Restaurants </a></li>
+          <li><a href ="#">Retail</a></li>
+          <li><a href ="contact.html">Contact</a></li>
+          <li><a href ="about.html">About</a></li>
+        </ul>
+      </div>
+
+  </div>
+</div>
+
+<div class="banner4">
+  <div class="banner4-text">
+    <h3>Get In Touch</h3>
+  </div>
+  </div>
+<div class ="page4">
+<div class ="page4-wrapper">
+      <div class="container">
+          <h3 class="contact-text">Contact Us</h3>
+        <form id="contact" action="" method="post">
+
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">`Submit</button>
+          </fieldset>
+        </form>
+      </div>
+  <div class="container">
+<section class="location">
+<h3 class="location-text"> Find Us</h3>
+  <div id="map" style="width:400px;height:400px">
+    <script>
+function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(49.2834511, -123.1152548),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+</section>
+</div>
+</div>
+
+        <footer class ="footer">
+          <div class = "row">
+            <div class ="col-12">
+              <ul class = "social social4">
+                <li><a href ="#"><i class ="fa fa-facebook"></i></a></li>
+                <li><a href ="#"><i class ="fa fa-google-plus"></i></a></li>
+                <li><a href ="#"><i class ="fa fa-twitter"></i></a></li>
+                <li><a href ="#"><i class ="fa fa-youtube"></i></a></li>
+                <li><a href ="#"><i class ="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+              <div class ="second-nav">
+              <div class = "row">
+                <div class ="col-12">
+                  <ul class = "footer-nav">
+                    <li><a href ="index.html">Home</a></li>
+                        <li><a href ="vegan.html">Going Vegan</a></li>
+                    <li><a href ="#">Recipes</a></li>
+                    <li><a href ="restaurants.html">Restaurants </a></li>
+                    <li><a href ="#">Retail</a></li>
+                      <li><a href="#" class="button">  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button></a> </li>
+                    <li><a href ="about.html">About</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class = "row copy">
+                <div class ="col-12">
+                  <p>Vanouver Vegans 2018 &copy; Dackobrink inc.</p>
+                </div>
+              </div>
+
+            </div>
+        </footer>
+
+
+
+</div>  <!--wrapper-->
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<script src ="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</body>
+</html>

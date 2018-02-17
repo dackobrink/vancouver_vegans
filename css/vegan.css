@@ -1,0 +1,136 @@
+
+/** go vegan page **/
+.banner2 h1, .banner2 h3, .banner2 h6 {
+  margin: 0;
+  text-shadow: 2px 2px 6px #000;
+  text-align: center;
+  background-color: rgba(56,157,160,0.5);
+  padding: 3%;
+  font-family: 'Work Sans', sans-serif;
+
+
+}
+
+.banner2 {
+  color: black;
+  background: url('../img/banner2.jpg') top left/cover no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.page2-wrapper {
+  background-color: black;
+  padding-top: 5%;
+}
+
+.page2-flex {
+  display: flex;
+}
+
+.aside img {
+  max-width: 30%;
+}
+
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+
+}
+
+.page2-wrapper h3 {
+  margin: 0 0 30px;
+  font-size: 1.8em;
+  font-family: 'Arvo', serif;
+  background-color: #B0D6DB;
+  color: black;
+}
+
+.featured-blog, .featured-blog2 , .featured-blog3{
+  margin: 0 4%;
+  padding: 100px 0;
+  border-top: 2px solid gainsboro;
+}
+
+.featured-blog-main, .featured-blog-main2, .featured-blog-main3 {
+  background: rgba(0,0,0,0.3);
+}
+
+.blog-flex, .blog-flex2,  .blog-flex3 {
+  display: flex;
+}
+
+.featured-blog p, .featured-blog2 p, .featured-blog3 p {
+  font-family:'Work Sans', sans-serif;
+}
+
+.blog-text, .blog-text2 , .blog-text3 {
+  margin: 0 30px;
+  width: 70%;
+}
+
+.blog-img, .blog-img2, .blog-img3 {
+  width: 20%;
+}
+
+.blog-img img, .blog-img2 img, .blog-img3 img {
+  width: 100%;
+}
+
+a:link {
+  color:   #8797D2;
+}
+
+a:visited, a:active, a:hover {
+  color: #B0D6DB;
+}
+
+a:active {
+
+}
+
+
+@media screen and (max-width: 48em) {
+  .banner{
+    background-attachment: scroll;
+  }
+.featured-blog, .featured-blog2 , .featured-blog3{
+  margin: 0;
+}
+  .blog-flex, .blog-flex2, .blog-flex3 {
+    flex-direction: column;
+  }
+
+  .blog-text, .blog-text2 .blog-text3{
+    width: 100%;
+/*    margin: 0 auto;*/
+  }
+
+  .blog-img2,  .blog-img3 {
+    width: 100%;
+    margin: 0 auto;
+  }
+    .blog-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .blog-img img,  .blog-img2 img, .blog-img3 img{
+      width: 100%;
+
+}
+    .blog-text, .blog-text2 , .blog-text3 {
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+     .banner2-text h3 {
+    font-size: 1.5rem;
+  }
+  .banner2-text h6 {
+    font-size: 1rem;
+  }
+}
